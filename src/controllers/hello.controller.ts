@@ -28,18 +28,12 @@ export class HelloController {
   })
   async helloArrayParse(
     @param.array("numberArray", "query", {
-      description: "number array",
-      items: {
-        type: "number",
-        pattern: "[0-9]{4}",
-      },
+      type: "number",
+      pattern: "[0-9]{4}",
     }) numberArray: number[],
     @param.array("stringArray", "query", {
-      description: "string array",
-      items: {
-        type: "string",
-        pattern: "[a-zA-Z]{4}",
-      },
+      type: "string",
+      pattern: "[a-zA-Z]{4}",
     }) stringArray: string[],
   ): Promise<object> {
     // console.log("number array:");
