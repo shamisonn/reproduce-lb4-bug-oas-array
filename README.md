@@ -42,14 +42,13 @@ $ lb4 controller # add Hello
 request
 
 ```
-http://[::1]:3000/hello_array_parse?greeting=hello&numberArray=12345&numberArray=123&stringArray=abcde&stringArray=abc
+http://[::1]:3000/hello_array_parse?numberArray=12345&numberArray=123&stringArray=abcde&stringArray=abc
 ```
 
 reponse
 
 ```
 {
-  "greeting": "hello",
   "numberArray": [
     "12345",
     "123"
@@ -71,14 +70,13 @@ issue
 request
 
 ```
-http://[::1]:3000/hello_comma_array?greeting=hello&numberArray=12345,678&stringArray=abcde,fgh
+http://[::1]:3000/hello_comma_array?numberArray=12345,678&stringArray=abcde,fgh
 ```
 
 response
 
 ```
 {
-  "greeting": "hello",
   "numberArray": "12345,678",
   "stringArray": "abcde,fgh"
 }
