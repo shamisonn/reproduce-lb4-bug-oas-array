@@ -37,6 +37,8 @@ $ lb4 controller # add Hello
 
 ### 3. check for behavers
 
+Run by `npm start`
+
 #### case1: request query by array params
 
 request
