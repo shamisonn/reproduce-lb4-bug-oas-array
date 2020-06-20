@@ -6,8 +6,8 @@
 
 - array\[string\] is correctly parsed, but **array\[number\] is NOT correctly parsed.**
   - like this: `?params=123&params=456`
-  - expected: `[ 123, 456 ]`
-  - actual: `[ "123", "456" ]`
+    - expected: `[ 123, 456 ]`
+    - actual: `[ "123", "456" ]`
 - and, unsupported array query params is delimited comma
   - like this: `?params=123,456`
     - expected: `[ 123, 456 ]`
@@ -88,5 +88,5 @@ issue
 
 - I don't use `@param.array` for delimited by comma request params array
 - numberArray, stringArray are not parsed.
-  - so I should split by comma
+  - so I need to split by comma
 - `items: { pattern: .. }` is ignored.
