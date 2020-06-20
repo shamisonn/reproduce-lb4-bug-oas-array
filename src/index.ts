@@ -1,4 +1,7 @@
-import {ApplicationConfig, ReproduceLb4BugOasArrayApplication} from './application';
+import {
+  ApplicationConfig,
+  ReproduceLb4BugOasArrayApplication,
+} from './application';
 
 export * from './application';
 
@@ -9,7 +12,7 @@ export async function main(options: ApplicationConfig = {}) {
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
-  console.log(`Try ${url}/ping`);
+  // console.log(`Try ${url}/ping`);
 
   return app;
 }
